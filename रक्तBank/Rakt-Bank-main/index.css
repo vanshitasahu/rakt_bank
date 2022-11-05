@@ -96,7 +96,7 @@ header {
 .header-list ul li::after {
   content: "";
   height: 2px;
-  background: #cd5c5c;
+  background: #ff0000;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -151,7 +151,7 @@ header {
 
 .hero-btn:hover {
   border: 1px solid #cd5c5c;
-  background: #cd5c5c;
+  background: #ff0000;
   transition: 1s;
   font-weight: 300;
 }
@@ -350,7 +350,7 @@ main {
 
 /*Volunteer*/
 .volunteer {
-  background: #f08080;
+  background: #7bc8fd;
   font-family: sans-serif;
   padding-bottom: 20px;
 }
@@ -537,7 +537,7 @@ main {
   .header-list ul li::after {
     content: "";
     height: 2px;
-    background: #cd5c5c;
+    background: #ff0000;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -589,8 +589,8 @@ main {
   }
 
   .hero-btn:hover {
-    border: 1px solid #cd5c5c;
-    background: #cd5c5c;
+    border: 1px solid #ff0000;
+    background: #ff0000;
     transition: 1s;
   }
 
@@ -635,6 +635,17 @@ main {
     .header-list ul {
       padding: 30px;
     }
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
   }
   /*ABOUT*/
 
@@ -754,7 +765,7 @@ main {
   /*Volunteer*/
 
   .volunteer {
-    background: #f08080;
+    background: #ff0000;;
     font-family: sans-serif;
     padding-bottom: 20px;
   }
@@ -783,7 +794,7 @@ html {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: rgba(255, 68, 68, 0.877);
+  background-color: rgb(255,0,0);
   color: white;
   cursor: pointer;
   padding: 15px;
