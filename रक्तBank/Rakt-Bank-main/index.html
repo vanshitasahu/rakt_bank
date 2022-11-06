@@ -24,6 +24,7 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+    
 </head>
 <title>रक्तBank</title>
 <div class="preloader">
@@ -84,7 +85,7 @@
 
                 <h1 class="headingg"><b>ABOUT US </b></h1> <br>
                 <h1 class="heading">What is <b>रक्तBank</b> all about ?</h1> <br>
-                <p class="head-des" class="text">We solve the problem of blood emergencies by connecting <span
+                <p class="head-des" class="text">We solve jjjjjjjjjjjjjjjjjjjjthe problem of blood emergencies by connecting <span
                         class="one-line"><br></span>blood donors directly with people in blood need.it also fulfill the
                     need of blood at the time of emergency.</p>
                 <div class="row">
@@ -294,7 +295,20 @@
             </div>
         </div>
     </section>
+    <div id="map">
+        fsfsfsfsd
+    </div>
 
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB02zc8MY-yutu_hLw-WMpeEoSui3fdFQ0&callback=initMap&v=weekly"
+      defer
+    ></script>
     <!--FOOTER-->
 
     <footer>
@@ -367,3 +381,29 @@
 </body>
 
 </html>
+
+
+
+
+<script>
+
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+//AIzaSyB02zc8MY-yutu_hLw-WMpeEoSui3fdFQ0
+window.initMap = initMap;</script>
+
+
+<style>/* 
+    * Always set the map height explicitly to define the size of the div element
+    * that contains the map. 
+    */
+   #map {
+     height: 100%;
+   }
+</style>
