@@ -413,7 +413,7 @@ main {
 
 .vol:hover {
   transform: scale(1.06);
-  background: #ffb6c1;
+  background: #ff0000;
 }
 
 @media screen and (max-width: 510px) {
@@ -969,7 +969,7 @@ html {
 
 .vol:hover {
   transform: scale(1.06);
-  background: #ffb6c1;
+  background: #ff0000;
 }
 
 @media screen and (max-width: 510px) {
